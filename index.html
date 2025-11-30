@@ -3,84 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jawad Asif — Enter the Upside Down</title>
+  <title>Happy Birthday Jawad Asif</title>
   <link rel="stylesheet" href="style.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-  <!-- Optional: Font for glitch text -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png" />
 </head>
 <body>
-  <!-- Fog Effect -->
-  <div id="fog"></div>
-  <!-- Ambient Rumble Audio -->
-  <audio id="rumble-audio" loop preload="auto" src="assets/demogorgon_rumble.mp3"></audio>
+  <!-- Ambient Music -->
+  <audio id="rumble-audio" loop preload="auto" src="assets/happy_birthday_music.mp3"></audio>
   <button id="mute-btn" aria-label="Toggle Sound"></button>
 
   <!-- Home/Intro Screen -->
   <section id="intro" class="active">
     <div class="tv-animation">
-      <div class="vhs-layer"></div>
       <div class="tv-screen">
         <h1 id="stranger-header">
           <!-- Letters will be injected via JS for staggered animation -->
         </h1>
-        <p class="subtitle glitch">Happy Birthday, Jawad Asif — Enter the Upside Down.</p>
-        <button id="enter-btn" class="enter-btn">ENTER</button>
+        <p class="subtitle">Happy Birthday, Jawad Asif 🎉</p>
+        <button id="enter-btn" class="enter-btn">Celebrate!</button>
       </div>
     </div>
   </section>
 
   <!-- Episode Story Section -->
-  <section id="episode" class="hidden section-glitch">
-    <div class="vhs-distortion"></div>
-    <h2 class="episode-title">Episode 1: The Day Jawad Turned Amazing.</h2>
-    <div class="story-text chromatic-aberration vhs-grain">
+  <section id="episode" class="hidden">
+    <h2 class="episode-title">A Story Just for You</h2>
+    <div class="story-text">
       <p>
-        In a world where fate glitches, portals open, and destinies collide in the strangest ways… two people walked into the same university never knowing the universe had already written their names side by side.
+        Today is all about you, Jawad! From laughter to adventures, every moment has been brighter because of you.
         <br><br>
-        At first, they didn’t click. Not even close. They were two opposite frequencies — like a walkie-talkie stuck on static. But the Upside Down loves a slow burn.
-        <br><br>
-        So it pushed them together… again and again. A shared hallway. A random joke. A moment that felt strangely familiar, like déjà vu with red neon edges.
-        <br><br>
-        And then it happened: a spark. Quiet, unexpected, undeniable.
-        <br><br>
-        What started as “I don’t even like him/her” turned into “How did I ever live without you?”
-        <br><br>
-        They fell — not suddenly, but steadily — like two characters who finally realized the plot twist was love.
-        <br><br>
-        They fought for each other. They chose each other. And they never gave up, not even when the world tried its best to flip them upside down.
-        <br><br>
-        Now, on Jawad Asif’s second birthday together, their story continues — brighter, stronger, and stranger than ever.
-        <br><br>
-        Because some love stories aren’t normal… they’re supernatural.
+        You bring joy, warmth, and smiles everywhere you go. May this year bring even more amazing memories and dreams come true!
       </p>
     </div>
     <button class="next-btn">Next</button>
   </section>
 
   <!-- Memory Wall -->
-  <section id="memory-wall" class="hidden section-glitch">
-    <h2 class="memory-title">Memory Wall</h2>
+  <section id="memory-wall" class="hidden">
+    <h2 class="memory-title">Our Favorite Moments</h2>
     <div class="memory-grid">
-      <!-- Example Photo Items (Replace with your images) -->
-      <div class="memory-item" data-caption="First Adventure" data-date="Jan 2023" data-msg="Our first trip together!" style="--img:url('assets/photo1.jpg')">
+      <div class="memory-item" data-caption="First Adventure" data-date="Jan 2023" data-msg="Our first trip together!">
         <img src="assets/photo1.jpg" alt="Memory 1">
         <span class="memory-caption">First Adventure</span>
       </div>
-      <div class="memory-item" data-caption="Birthday 2023" data-date="Feb 2023" data-msg="Celebrating you!" style="--img:url('assets/photo2.jpg')">
+      <div class="memory-item" data-caption="Birthday 2023" data-date="Feb 2023" data-msg="Celebrating you!">
         <img src="assets/photo2.jpg" alt="Memory 2">
         <span class="memory-caption">Birthday 2023</span>
       </div>
-      <div class="memory-item" data-caption="Cute Cafe" data-date="Mar 2023" data-msg="Coffee moments." style="--img:url('assets/photo3.jpg')">
+      <div class="memory-item" data-caption="Cute Cafe" data-date="Mar 2023" data-msg="Coffee moments.">
         <img src="assets/photo3.jpg" alt="Memory 3">
         <span class="memory-caption">Cute Cafe</span>
       </div>
-      <!-- Add more .memory-item as needed -->
     </div>
     <button class="next-btn">Next</button>
   </section>
+
   <!-- Photo Modal -->
   <div id="photo-modal" class="modal hidden">
     <div class="modal-content">
@@ -93,50 +73,39 @@
     </div>
   </div>
 
-  <!-- Jawad's Powers -->
-  <section id="powers" class="hidden section-glitch">
-    <h2 class="powers-title">Jawad’s Special Powers</h2>
+  <!-- Powers -->
+  <section id="powers" class="hidden">
+    <h2 class="powers-title">Jawad’s Amazing Qualities</h2>
     <div class="powers-cards">
-      <div class="power-card neon-flip glitch" data-power="001">
-        <div class="card-front">Power 001: Kindness Telekinesis</div>
-        <div class="card-back">He lifts everyone’s mood without even touching them.</div>
+      <div class="power-card" data-power="001">
+        <div class="card-front">Kindness</div>
+        <div class="card-back">You lift everyone’s mood effortlessly.</div>
       </div>
-      <div class="power-card neon-flip glitch" data-power="002">
-        <div class="card-front">Power 002: Heart-Shield</div>
-        <div class="card-back">No matter what happens, he protects the people he loves.</div>
+      <div class="power-card" data-power="002">
+        <div class="card-front">Loyalty</div>
+        <div class="card-back">Once you care, it’s forever.</div>
       </div>
-      <div class="power-card neon-flip glitch" data-power="003">
-        <div class="card-front">Power 003: Charm Frequency</div>
-        <div class="card-back">A smile that breaks through any dimension.</div>
+      <div class="power-card" data-power="003">
+        <div class="card-front">Charm</div>
+        <div class="card-back">A smile that brightens every room.</div>
       </div>
-      <div class="power-card neon-flip glitch" data-power="004">
-        <div class="card-front">Power 004: Loyalty Lock</div>
-        <div class="card-back">Once he loves you, he never lets go — not even the Upside Down can change that.</div>
-      </div>
-      <div class="power-card neon-flip glitch" data-power="005">
-        <div class="card-front">Power 005: Courage Pulse</div>
-        <div class="card-back">He walks through every storm like a hero from another world.</div>
-      </div>
-      <div class="power-card neon-flip glitch" data-power="006">
-        <div class="card-front">Power 006: Love Teleportation</div>
-        <div class="card-back">No matter where I am, his love reaches me.</div>
+      <div class="power-card" data-power="004">
+        <div class="card-front">Courage</div>
+        <div class="card-back">You face every challenge like a hero.</div>
       </div>
     </div>
     <button class="next-btn">Next</button>
   </section>
 
   <!-- Love Letter -->
-  <section id="love-letter" class="hidden section-glitch">
-    <h2 class="letter-title">Love Letter From the Upside Down</h2>
-    <div class="bulb-strings"></div>
-    <div class="letter-body glitch">
+  <section id="love-letter" class="hidden">
+    <h2 class="letter-title">A Letter Just for You</h2>
+    <div class="letter-body">
       <p>
         “Jawad,<br>
-        In every universe, every timeline, every upside and downside — I choose you.<br>
-        We didn’t start perfect. We didn’t even start friendly.<br>
-        But we grew, we fought, we stayed… and that is our magic.<br>
+        Every day with you is my favorite. Thank you for being you.<br>
         On your birthday, I just want you to know:<br>
-        You are my safest place, my strangest adventure, and my favorite person in every world.”<br>
+        You are my joy, my comfort, and my favorite person in every world.”<br>
         <br>
         — Mahnoor ❤️
       </p>
@@ -144,21 +113,21 @@
     <button class="next-btn">Next</button>
   </section>
 
-  <!-- Final Surprise Portal -->
-  <section id="final-surprise" class="hidden section-glitch">
+  <!-- Final Surprise -->
+  <section id="final-surprise" class="hidden">
     <div class="portal-box">
-      <button id="portal-btn" class="portal-btn">Break Through the Portal</button>
-      <div class="portal-effect hidden"></div>
+      <button id="portal-btn" class="portal-btn">Open Your Surprise</button>
       <div class="final-message hidden">
-        <h2>Jawad Asif — I love you more than Eleven loves Eggos. Happy Birthday!</h2>
+        <h2>Happy Birthday Jawad! 🎉❤️</h2>
         <div class="hidden-surprise">
-          <!-- Playlist or image — placeholder -->
           <img src="assets/surprise.jpg" alt="Hidden Surprise" />
-          <p class="surprise-text">Your secret playlist, or note/image goes here!</p>
+          <p class="surprise-text">Your special gift, playlist, or memory goes here!</p>
         </div>
       </div>
     </div>
   </section>
+
   <script src="script.js"></script>
 </body>
 </html>
+
